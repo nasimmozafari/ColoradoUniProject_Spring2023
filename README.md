@@ -20,10 +20,7 @@ pip install geemap
 1. [Copernicus_S1_GRD](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S1_GRD) by European Space Agency(ESA)
 2. USGS NAIP Imagery NDVI (GEE basemap layer)
 3. USGS NAIP Imagery False Color
-4. Verified landslides of North America collected by Earth Lab at the University of Colorado Boulder
-
-[NASA Global Landslide Catalog (GLC)] Link: https://data.nasa.gov/Earth-Science/Global-Landslide-Catalog/h9d8-neg4 
-[Sentinel-1 SAR] Link: https://sentinel.esa.int/web/sentinel/user-guides/sentinel-1-sar 
+4. Verified landslides of North America collected by Earth Lab at the University of Colorado Boulder ([NASA Global Landslide Catalog (GLC)] Link: https://data.nasa.gov/Earth-Science/Global-Landslide-Catalog/h9d8-neg4 
 
 Citations:
 
