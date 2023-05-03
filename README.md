@@ -26,8 +26,9 @@ Citations:
 
 Project Contacts
 @Nasim Mozafari Amiri
-@Elsa Culler
 
+Acknowledgements
+This project was inspired by Dr. Elsa Culler, CU Boulder Earth Lab
 
 License:
 This project is open source and available under the MIT License.
