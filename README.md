@@ -6,13 +6,13 @@ According to NASA Global Landslide Catalog, landslides are a serious geological 
 
 What are the goals?
 detecting land changes due to landslide of Caddy Lake, Manitoba, Canada, 2016-06-25 using SAR (Sentinel-1) satellite images
-![image](https://user-images.githubusercontent.com/92868762/235979152-05c68cf0-11d7-47dd-92a8-0befa9c6d68e.png)
 
 ## Environment Requirements
 How to install your environment?
 * [Start with instructions for installing the earth-analytics-python] (https://www.earthdatascience.org/workshops/setup-earth-analytics-python/)
+* Access to Goole Earth Engine account
 
-* Include **code** for installing any additional packages
+## Include **code** for installing any additional packages
 %%bash
 pip install geemap
 
@@ -22,6 +22,18 @@ pip install geemap
 3. USGS NAIP Imagery False Color
 4. Verified landslides of North America collected by Earth Lab at the University of Colorado Boulder
 
+[NASA Global Landslide Catalog (GLC)] Link: https://data.nasa.gov/Earth-Science/Global-Landslide-Catalog/h9d8-neg4 
+[Sentinel-1 SAR] Link: https://sentinel.esa.int/web/sentinel/user-guides/sentinel-1-sar 
+
+Citations:
+
+Project Contacts
+@Nasim Mozafari Amiri
+@Elsa Culler
+
+
+License:
+This project is open source and available under the MIT License.
 
 
 
