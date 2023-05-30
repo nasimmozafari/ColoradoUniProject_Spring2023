@@ -3,6 +3,6 @@ channels:
   - conda-forge
   - defaults
 
-dependendies:
+dependencies:
   - python<3.11.0
   - pandas
