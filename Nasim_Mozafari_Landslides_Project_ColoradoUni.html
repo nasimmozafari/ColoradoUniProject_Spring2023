@@ -17357,7 +17357,7 @@ Date: 2016-12-11
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[63]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create change map fo alpha</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create change map </span>
 <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.01</span>
 <span class="n">location</span> <span class="o">=</span> <span class="p">[</span><span class="mf">49.8063</span><span class="p">,</span> <span class="o">-</span><span class="mf">95.2098</span><span class="p">]</span>
 
@@ -17522,11 +17522,11 @@ Date: 2016-12-11
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[64]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Sample the first few list indices.</span>
-<span class="n">samples</span> <span class="o">=</span> <span class="n">ee</span><span class="o">.</span><span class="n">List</span><span class="o">.</span><span class="n">sequence</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">sample_vv_imgs</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># # Sample the first few list indices.</span>
+<span class="c1"># samples = ee.List.sequence(2, 5).map(sample_vv_imgs)</span>
 
-<span class="c1"># Calculate and display the correlation matrix.</span>
-<span class="n">np</span><span class="o">.</span><span class="n">set_printoptions</span><span class="p">(</span><span class="n">precision</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">suppress</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="c1"># # Calculate and display the correlation matrix.</span>
+<span class="c1"># np.set_printoptions(precision=2, suppress=True)</span>
 </pre></div>
 
      </div>
@@ -17542,7 +17542,7 @@ Date: 2016-12-11
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">plot_change_maps</span><span class="p">(</span><span class="n">im_list</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># plot_change_maps(im_list)</span>
 </pre></div>
 
      </div>
