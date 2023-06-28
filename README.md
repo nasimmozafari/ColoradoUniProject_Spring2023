@@ -3,7 +3,6 @@
 Landslides can cause significant damages to society, destroy ecosystem, destruct environment and economical losses (eg. Damages to infrastructure, agriculture, water resource, people health, etc).
 
 [![DOI](https://zenodo.org/badge/634037575.svg)](https://zenodo.org/badge/latestdoi/634037575)
-
 - What are the project motivations?
 According to NASA Global Landslide Catalog, landslides are a serious geological hazard to nearly all the States in the United States. In addition, based on USGS, landslides will annually remain approximately 25-50 victims across the country. Though, landslide exposure assessment and understanding the nature of neighborhood to live in it is important to mitigate catastrophe. Preliminary monitoring can provide vital information on how much an area is prone to landslide, which accordingly is essential for emergency response, and catastrophe mitigation in the areas vulnerable to landslides.
 
