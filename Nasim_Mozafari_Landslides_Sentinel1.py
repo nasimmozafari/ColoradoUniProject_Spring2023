@@ -492,41 +492,52 @@ split_roi
 
 # ## Data avalability
 
-# In[21]:
+# In[37]:
 
 
-# Sentinel-1 images availability Caddy Lake landslide 
-event_date = ee.Date('2016-06-25')
+def get_sentinel_1_availability(event_date):
+    start_date = ee.Date(event_date).advance(-180, 'days')
+    end_date = ee.Date(event_date).advance(180, 'days')
 
-# Select one year surrounding the event
-start_date = event_date.advance(-180, 'days')
-end_date = event_date.advance(180, 'days')
+    availability = "Sentinel-1 image data range is between {} and {}".format(
+        start_date.format('YYYY-MM-dd').getInfo(),
+        end_date.format('YYYY-MM-dd').getInfo()
+    )
+    
+    return availability
 
-'Sentinel-1 image data range is between {} and {}'.format(
-    start_date.format('YYYY-MM-dd').getInfo(),
-    end_date.format('YYYY-MM-dd').getInfo())
+# Example usage:
+event_date = '2016-06-25'
+availability = get_sentinel_1_availability(event_date)
+print(availability)
 
 
-# In[22]:
+# In[38]:
 
 
-# define the center coordinates of region of interest
-center_point = ee.Geometry.Point([-95.2098, 49.8063])
+def create_aoi(center_coordinates, width):
+    # Define the center point of the region of interest
+    center_point = ee.Geometry.Point(center_coordinates)
 
-# Create an Earth Engine aoi using the center coordinates and dimensions
+    # Create an Earth Engine AOI using the center coordinates and dimensions
+    aoi = center_point.buffer(width / 2).bounds()
+
+    # Print the bounding box coordinates with four decimal places
+    coords = [[round(x, 4) for x in coord] for coord in aoi.coordinates().getInfo()[0]]
+    print("Bounding box coordinates: ", coords)
+
+    return aoi
+
+# Example usage:
+center_coordinates = [-95.2098, 49.8063]
 width = 1000
-aoi = center_point.buffer(width / 2).bounds()
-
-# Print the bounding box coordinates with four decimal places
-print("Bounding box coordinates: ", [[round(x, 4) for x in coords] for coords
-                                     in aoi.coordinates().getInfo()[0]])
-
+aoi = create_aoi(center_coordinates, width)
 aoi
 
 
 # ## Collect SAR Images
 
-# In[23]:
+# In[39]:
 
 
 # Collect and filter Sentinel-1 images by time and region of interest
@@ -563,20 +574,6 @@ image_collection
 # In[24]:
 
 
-# Retrieve all images in the collection
-image_list = image_collection.toList(image_collection.size())
-
-# Print date of each image in the list
-print('All images in collection:')
-for i in range(image_list.size().getInfo()):
-    image = ee.Image(image_list.get(i))
-    acquisition_time = ee.Date(image.get('system:time_start'))
-    print('Date:', acquisition_time.format('YYYY-MM-dd').getInfo())
-
-
-# In[25]:
-
-
 # Retrieve acquisition date of each image in the collection as a list
 timestamplist = (image_collection.aggregate_array('system:time_start')
                  .map(lambda t: ee.String('T').cat(ee.Date(t).format(
@@ -588,7 +585,7 @@ timestamplist
 
 # ## Convert and clip Image collection
 
-# In[26]:
+# In[40]:
 
 
 im_list = image_collection.toList(image_collection.size())
@@ -614,14 +611,14 @@ im_list.length().getInfo()
 
 # ## Change detection
 
-# In[27]:
+# In[41]:
 
 
 # Add EE drawing method to folium
 folium.Map.add_ee_layer = add_ee_layer
 
 
-# In[28]:
+# In[42]:
 
 
 # def selectvv(current):
@@ -631,7 +628,7 @@ folium.Map.add_ee_layer = add_ee_layer
 vv_list = im_list.map(selectvv)
 
 
-# In[29]:
+# In[43]:
 
 
 # # Create a likelihood ratio test statistic k = len(timestamplist)//2
@@ -650,7 +647,7 @@ vv_list = im_list.map(selectvv)
 # plt.show()
 
 
-# In[30]:
+# In[44]:
 
 
 # Create change map 
@@ -678,7 +675,7 @@ mp.add_child(folium.LayerControl())
 
 # ## Change map
 
-# In[31]:
+# In[30]:
 
 
 # # Sample the first few list indices.
@@ -688,7 +685,7 @@ mp.add_child(folium.LayerControl())
 # np.set_printoptions(precision=2, suppress=True)
 
 
-# In[32]:
+# In[31]:
 
 
 # plot_change_maps(im_list)
