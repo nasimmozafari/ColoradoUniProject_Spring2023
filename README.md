@@ -2,6 +2,7 @@
 
 Landslides can cause significant damages to society, destroy ecosystem, destruct environment and economical losses (eg. Damages to infrastructure, agriculture, water resource, people health, etc).
 
+![Caddy Lake landslide, June 2016](https://i.cbc.ca/1.3654072.1467042154!/fileImage/httpImage/image.jpg_gen/derivatives/original_1180/grant-fisette-s-home.jpg)
 ## DOI
 [![DOI](https://zenodo.org/badge/634037575.svg)](https://zenodo.org/badge/latestdoi/634037575)
 
