@@ -1,13 +1,13 @@
-# Landslide detection using SAR (Sentinel-1) images
+# Landslide detection using SAR (Sentinel-1) and Multispectral (Sentinel-2) images
 
-Landslides can cause significant damages to society, destroy ecosystem, destruct environment and economical losses (eg. Damages to infrastructure, agriculture, water resource, people health, etc).
+Landslides can cause significant damages to society, destroy ecosystem, destruct environment and economical losses (eg. Damages to infrastructure, agriculture, water resource, people health, etc). In this study we investigated two landslides, namely Caddy Lake, Canada and Big Sur, USA. 
 
 ![Caddy Lake landslide, June 2016](https://i.cbc.ca/1.3654072.1467042154!/fileImage/httpImage/image.jpg_gen/derivatives/original_1180/grant-fisette-s-home.jpg)
-Recarious situation of a home after the weekend downpour around Caddy Lake, Manitoba, Canada, June 2016
+Recarious situation of a home after the weekend downpour around Caddy Lake, Manitoba, Canada, June 2016 ©cbc.ca News
 
-![Big Dur landslide, May 2015]([https://static01.nyt.com/images/2017/05/25/us/25sur-xp/25sur-xp-superJumbo.jpg?quality=75&auto=webp])(https://static01.nyt.com/images/2017/05/25/us/25sur-xp/25sur-xp-superJumbo.jpg?quality=75&auto=webp)
-Big Sur landslide, Highway 1, Californisa
-
+![Big Dur landslide, May 2015](https://static01.nyt.com/images/2017/05/25/us/25sur-xp/25sur-xp-superJumbo.jpg?quality=75&auto=webp)
+Big Sur landslide, Highway 1, California, USA, May 2015 ©The New York Times
+ 
 ## DOI
 [![DOI](https://zenodo.org/badge/634037575.svg)](https://zenodo.org/badge/latestdoi/634037575)
 
