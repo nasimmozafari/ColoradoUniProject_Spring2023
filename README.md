@@ -35,7 +35,7 @@ pip install geemap
 4. Verified landslides of North America collected by Earth Lab at the University of Colorado Boulder (Main source: [NASA Global Landslide Catalog (GLC)] Link: https://data.nasa.gov/Earth-Science/Global-Landslide-Catalog/h9d8-neg4 
 
 ## Running the workflow
-The python code works by activating the earth-analytics environment in terminal typing conda activate earth-analytics. Then, open a Jupyter notebook browser typing jupyter notebook in terminal. Navigate to the Nasim_Mozafari_Landslides_Project_ColoradoUni.ipynb [here] (https://github.com/nasimmozafari/Landslide_Detection_SAR). Run the ipynb file from the Kernel tab selecting Restart & Run All. The code contains EarthExplorer pre-written syntax
+The python code works by activating the earth-analytics environment in terminal typing conda activate earth-analytics. Then, open a Jupyter notebook browser typing jupyter notebook in terminal. Navigate to the Landslide_Detection_SAR_MSI_Nasim_Mozafari.ipynb [here](https://github.com/nasimmozafari/Landslide_Detection_SAR). Run the ipynb file from the Kernel tab selecting Restart & Run All. The code contains EarthExplorer pre-written syntax
 
 Citations:
 
