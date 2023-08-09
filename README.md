@@ -23,6 +23,7 @@ However, there is a twist, since both of these locations are close to large bodi
 How to install your environment?
 * [Start with instructions for installing the earth-analytics-python] (https://www.earthdatascience.org/workshops/setup-earth-analytics-python/)
 * Access to Goole Earth Engine account
+* environment.yml (provided in repository)
 
 ## Include **code** for installing any additional packages
 %%bash
@@ -35,7 +36,7 @@ pip install geemap
 4. Verified landslides of North America collected by Earth Lab at the University of Colorado Boulder (Main source: [NASA Global Landslide Catalog (GLC)] Link: https://data.nasa.gov/Earth-Science/Global-Landslide-Catalog/h9d8-neg4 
 
 ## Running the workflow
-The python code works by activating the earth-analytics environment in terminal typing conda activate earth-analytics. Then, open a Jupyter notebook browser typing jupyter notebook in terminal. Navigate to the Landslide_Detection_SAR_MSI_Nasim_Mozafari.ipynb [here](https://github.com/nasimmozafari/Landslide_Detection_SAR). Run the ipynb file from the Kernel tab selecting Restart & Run All. The code contains EarthExplorer pre-written syntax
+The python code works by activating the earth-analytics environment in terminal typing conda activate earth-analytics. Then, open a Jupyter notebook browser typing jupyter notebook in terminal. Navigate to the Landslide_Detection_SAR_MSI_Nasim_Mozafari.ipynb [here](https://github.com/nasimmozafari/Landslide_Detection_SAR). Run the ipynb file from the Kernel tab selecting Restart & Run All. The code contains some EarthExplorer pre-written syntax.
 
 Citations:
 
