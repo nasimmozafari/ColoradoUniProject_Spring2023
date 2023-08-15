@@ -9,7 +9,7 @@ Recarious situation of a home after the weekend downpour around Caddy Lake, Mani
 Big Sur landslide, Highway 1, California, USA, May 2015 ©The New York Times
  
 ## DOI
-[![DOI](https://zenodo.org/badge/634037575.svg)](https://zenodo.org/badge/latestdoi/634037575)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8248086.svg)](https://doi.org/10.5281/zenodo.8248086)
 
 ## Motivations and goals:
 - What are the project motivations?
