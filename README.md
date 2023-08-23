@@ -41,7 +41,7 @@ The python code works by activating the earth-analytics environment in terminal 
 Citations:
 
 Project Contacts
-@Nasim Mozafari Amiri
+Nasim.MozafariAmiri@colorado.edu
 
 Acknowledgements
 This project was inspired by Dr. Elsa Culler, CU Boulder Earth Lab
