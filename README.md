@@ -38,8 +38,6 @@ pip install geemap
 ## Running the workflow
 The python code works by activating the earth-analytics environment in terminal typing conda activate earth-analytics. Then, open a Jupyter notebook browser typing jupyter notebook in terminal. Navigate to the Landslide_Detection_SAR_MSI_Nasim_Mozafari.ipynb [here](https://github.com/nasimmozafari/Landslide_Detection_SAR). Run the ipynb file from the Kernel tab selecting Restart & Run All. The code contains some EarthExplorer pre-written syntax.
 
-Citations:
-
 Project Contacts
 Nasim.MozafariAmiri@colorado.edu
 
